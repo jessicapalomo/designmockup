@@ -1,31 +1,34 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
 /* nav */
-nav ul {
+navigation ul {
   display: flex;
   justify-content: right;
   border: pink;
 }
 
-nav ul li {
-  padding: 1rem;
+navigation ul li {
   list-style: none;
-  justify-content: right;
-  border: green;
-}
-
-nav {
   display: flex;
   flex-direction: row;
-  border-bottom: 1px solid;
   justify-content: right;
+}
+
+navigation {
+  width: 100em;
+  border-bottom: 1px solid;
   border-bottom-color: rgb(204, 199, 199);
-  border: purple;
+  border: 1px solid purple;
+  list-style: none;
 }
 /* end nav */
 
 /* sidebar */
 .sidebar {
   margin: 0;
-  padding: 1em;
+  padding: 1rem;
   width: 200px;
   background-color: #f1f1f1;
   position: fixed;
@@ -33,7 +36,7 @@ nav {
   left: 0;
   height: 100%;
   overflow: auto;
-  border: red;
+  border: 1px solid red;
 }
 
 /* Sidebar links */
@@ -56,24 +59,26 @@ nav {
   color: white;
 }
 
-/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
-div.content {
-  margin-left: 200px;
-  padding: 1px 16px;
-  height: 1000px;
-}
 /* end sidebar  */
 
 /* columns */
+#columns {
+  display: flex;
+  justify-content: space-evenly;
+}
 .column-1 {
   float: left;
   width: 50%;
-  border: orange;
+  /* border: 1px solid orange; */
+  list-style: none;
 }
 .column-2 {
+  display: flex;
+  justify-content: left;
   float: right;
   width: 50%;
-  border: magenta;
+  border: 1px solid magenta;
+  list-style: none;
 }
 
 /* Clear floats after the columns */
